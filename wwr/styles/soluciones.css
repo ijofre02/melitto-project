@@ -26,7 +26,7 @@ header{
 .navegation {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .navegation a {
@@ -99,7 +99,7 @@ article {
     opacity: 0.8;
     color: #fff;
     text-align: center;
-    top: 120px;
+    top: 230px;
     padding: .5px;
 }
 
