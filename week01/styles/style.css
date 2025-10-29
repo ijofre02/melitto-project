@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.panel {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.has-parallax {
+    background-attachment: fixed;
+    /* el truco */
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 700px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* La cartita flotante */
+
+.info-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.info-flex .info-card {
+    width: 230px;
+    background: #c9bae4;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-flex .info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0 0 0 / 0.2);
+}
+
+.info-flex img {
+    width: 30%;
+    border-radius: 8px;
+}
+
+.info-flex h3 {
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.info-flex p {
+    font-size: 0.95rem;
+    color: #444;
+    margin: 0.75rem 0;
+}
+
+.info {
+    display: flex;
+}
+
+/* Botoncito */
+
+.btn-ubicacion {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid #9d85c6;
+    /* el violeta del borde */
+    border-radius: 30px;
+    /* bordes redondeados */
+    background-color: #f9f5ef;
+    /* fondo clarito */
+    color: #6d4ba3;
+    /* texto violeta */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.btn-ubicacion:hover {
+    background-color: #9d85c6;
+    color: #fff;
+}
+
+/* layaut y estilo seccion info */
+
+.info-section {
+    text-align: center;
+    background-color: #f9f5ef;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Títulos */
+.info-header h1 {
+    color: #6d4ba3;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.info-header p {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de las tarjetas */
+.info-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 60px;
+}
+
+/* Tarjetas individuales */
+.info-card {
+    background-color: #c8b3e0;
+    border-radius: 40px;
+    padding: 30px 20px;
+    width: 230px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.info-card h3 {
+    margin-bottom: 15px;
+}
+
+.info-card img {
+    width: 80px;
+    margin: 20px 0;
+}
+
+/* Sección de regalos */
+.gift-section {
+    margin-bottom: 40px;
+    color: #6d4ba3;
+}
+
+/* Botón */
+.btn-ubicacion {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid #9d85c6;
+    border-radius: 30px;
+    background-color: #f9f5ef;
+    color: #6d4ba3;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-ubicacion:hover {
+    background-color: #9d85c6;
+    color: #fff;
+}
