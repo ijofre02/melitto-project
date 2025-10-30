@@ -2,7 +2,7 @@
     --primary-color: #6d4ba3;
     --secondary-color: #ffffff;
     --accent1-color: #f6f2e7;
-    --accent2-color: #4F5384;
+    --accent2-color: #9379c3;
     --heading-font: "Playfair Display", serif;
     --body-font: "Lato", sans-serif;
 }
@@ -22,13 +22,14 @@ body {
 .hero h1 {
     font-size: 8.5rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--accent2-color);
     text-align: center;
     line-height: 1.2;
 }
 
 .hero h2 {
     font-size: 2.5rem;
+    color: var(--accent2-color);
 }
 
 .panel {
