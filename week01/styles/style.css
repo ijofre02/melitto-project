@@ -204,23 +204,3 @@ footer {
 
 /* Mejoras para celulares */
 
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    .info-flex {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .info-card {
-        width: 150px;
-        padding: 1rem;
-    }
-
-    .btn-ubicacion {
-        font-size: 1rem;
-        padding: 10px 30px;
-    }
-}
