@@ -241,7 +241,7 @@ footer {
 @media (max-width: 768px) {
     .has-parallax {
         background-size: cover;;
-        background-position: center top;
+        background-position: center;
         /* Centra la parte más visible */
         background-repeat: no-repeat;
     }
