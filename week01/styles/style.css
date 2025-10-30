@@ -29,20 +29,19 @@ body {
 
 .hero h2 {
     font-size: 2.5rem;
-    color: var(--accent2-color);
 }
 
 .panel {
     position: relative;
     min-height: 111vh;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     background-size: cover;
     background-position: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .has-parallax {
@@ -109,6 +108,13 @@ p {
     margin: 0.75rem 0;
 }
 
+.flex-ubicacion-norma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
 
 /* layaut y estilo seccion info */
 
@@ -153,6 +159,33 @@ p {
 .gift-section {
     margin-bottom: 40px;
     color: #6d4ba3;
+}
+
+.balanceo-parrafos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.balanceo-parrafos .content {
+    text-align: center;
+}
+
+/* Mové los contenedores */
+.balanceo-parrafos .content:first-child {
+    transform: translateX(35%);
+}
+
+.balanceo-parrafos .content:last-child {
+    transform: translateX(-35%);
+}
+
+@media (max-width: 768px) {
+    .balanceo-parrafos .content {
+        transform: none;
+    }
 }
 
 /* Botón */
@@ -201,6 +234,7 @@ footer {
     margin-top: 3rem;
     padding: 1rem 0;
     border-top: 1px solid rgba(122, 92, 164, 0.3);
+    text-decoration: none;
 }
 
 /* Mejoras para celulares */
