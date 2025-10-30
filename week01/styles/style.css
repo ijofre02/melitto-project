@@ -1,3 +1,12 @@
+:root {
+--primary-color: #6d4ba3;
+    --secondary-color: #ffffff;
+    --accent1-color: #594E34;
+    --accent2-color: #4F5384;
+    --heading-font: "Noto Sans", sans-serif;
+    --body-font: "Lato", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +34,7 @@ body {
 
 .has-parallax {
     background-attachment: fixed;
-    /* el truco */
+    /*  el truco */
 }
 
 .content {
@@ -55,17 +64,17 @@ p {
 }
 
 .info-flex .info-card {
-    width: 230px;
-    background: #c9bae4;
+    width: 170px;
+    background: var(--primary-color);
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0 0 0 / 0.1);
     padding: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .info-flex .info-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0 0 0 / 0.2);
+    box-shadow: 0 5px 15px rgba(0 0 0 / 0.5);
 }
 
 .info-flex img {
@@ -75,12 +84,12 @@ p {
 
 .info-flex h3 {
     margin-bottom: 0.5rem;
-    color: #222;
+    color: var(--secondary-color);
 }
 
 .info-flex p {
-    font-size: 0.95rem;
-    color: #444;
+    font-size: 1.1rem;
+    color: var(--secondary-color);
     margin: 0.75rem 0;
 }
 
@@ -186,4 +195,12 @@ p {
 .btn-ubicacion:hover {
     background-color: #9d85c6;
     color: #fff;
+}
+
+/* contador */
+.countdown {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #5a458a;
+    margin: 2rem 0;
 }
