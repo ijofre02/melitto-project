@@ -46,7 +46,13 @@ body {
 
 .has-parallax {
     background-attachment: fixed;
-    /*  el truco */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+    /* opcional, por si tarda en cargar */
+
+
 }
 
 .content {
