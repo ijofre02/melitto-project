@@ -1,5 +1,5 @@
 :root {
---primary-color: #6d4ba3;
+    --primary-color: #6d4ba3;
     --secondary-color: #ffffff;
     --accent1-color: #594E34;
     --accent2-color: #4F5384;
@@ -50,7 +50,7 @@ h1 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 /* La cartita flotante */
@@ -93,9 +93,6 @@ p {
     margin: 0.75rem 0;
 }
 
-.info {
-    display: flex;
-}
 
 /* Botoncito */
 
@@ -134,13 +131,13 @@ p {
 
 /* Títulos */
 .info-header h1 {
-    color: #6d4ba3;
+    color: var(--secondary-color);
     font-size: 2.2rem;
     margin-bottom: 10px;
 }
 
 .info-header p {
-    color: #555;
+    color: var(--secondary-color);
     margin-bottom: 40px;
 }
 
