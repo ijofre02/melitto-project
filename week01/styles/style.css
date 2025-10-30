@@ -240,8 +240,6 @@ footer {
 /* --- Ajustes para el celu --- */
 @media (max-width: 768px) {
     .has-parallax {
-        background-attachment: scroll;
-        /* Desactiva el parallax en móvil */
         background-size: contain;
         /* Evita que se recorte demasiado */
         background-position: center top;
