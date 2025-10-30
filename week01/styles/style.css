@@ -17,15 +17,26 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     line-height: 1.6;
-    max-width: 840px;
     margin: 0 35px ;
+}
+
+.hero h1 {
+    font-size: 8.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
 }
 
 .panel {
     position: relative;
-    min-height: 100vh;
+    min-height: 111vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     background-size: cover;
@@ -40,7 +51,7 @@ body {
 }
 
 .content {
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
     padding: 2rem;
     border-radius: 10px;
     max-width: 700px;
@@ -61,10 +72,11 @@ p {
 
 .info-flex {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     margin-top: 1.5rem;
+    margin-bottom: 60px;
 }
 
 .info-flex .info-card {
@@ -98,32 +110,6 @@ p {
 }
 
 
-/* Botoncito */
-
-.btn-ubicacion {
-    display: inline-block;
-    padding: 10px 30px;
-    border: 2px solid #9d85c6;
-    /* el violeta del borde */
-    border-radius: 30px;
-    /* bordes redondeados */
-    background-color: #f9f5ef;
-    /* fondo clarito */
-    color: #6d4ba3;
-    /* texto violeta */
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    font-size: 18px;
-    transition: all 0.3s ease;
-}
-
-/* Efecto al pasar el mouse */
-.btn-ubicacion:hover {
-    background-color: #9d85c6;
-    color: #fff;
-}
-
 /* layaut y estilo seccion info */
 
 .info-section {
@@ -145,15 +131,6 @@ p {
     margin-bottom: 40px;
 }
 
-/* Contenedor de las tarjetas */
-.info-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 60px;
-}
-
 /* Tarjetas individuales */
 .info-card {
     background-color: #c8b3e0;
@@ -169,7 +146,6 @@ p {
 }
 
 .info-card img {
-    width: 80px;
     margin: 20px 0;
 }
 
@@ -202,12 +178,20 @@ p {
 .countdown {
     text-align: center;
     font-size: 1.5rem;
-    color: #5a458a;
+    color: #fff;
     margin: 2rem 0;
 }
 
-.countdown p {
-    font-size: 1.5rem;
+.countdown h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+#timer {
+    font-size: 4rem; /* ← ajustá este valor para hacerlo más grande */
+    font-weight: 700;
+    color: #f6f2e7; /* podés cambiarle el color si querés que contraste más */
+    letter-spacing: 2px; /* opcional: separa un poquito los dígitos */
 }
 
 footer {
@@ -217,4 +201,27 @@ footer {
     margin-top: 3rem;
     padding: 1rem 0;
     border-top: 1px solid rgba(122, 92, 164, 0.3);
+}
+
+/* Mejoras para celulares */
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .info-flex {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .info-card {
+        width: 150px;
+        padding: 1rem;
+    }
+
+    .btn-ubicacion {
+        font-size: 1rem;
+        padding: 10px 30px;
+    }
 }
