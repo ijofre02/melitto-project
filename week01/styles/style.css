@@ -240,10 +240,10 @@ footer {
 /* --- Ajustes para el celu --- */
 @media (max-width: 768px) {
     .has-parallax {
-        background-size: contain;
-        /* Evita que se recorte demasiado */
+        background-size: cover;;
         background-position: center top;
         /* Centra la parte más visible */
+        background-repeat: no-repeat;
     }
 
     .panel {
