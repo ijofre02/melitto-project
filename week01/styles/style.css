@@ -238,17 +238,3 @@ footer {
 }
 
 /* --- Ajustes para el celu --- */
-@media (max-width: 768px) {
-    .has-parallax {
-        background-size: cover;;
-        background-position: center;
-        /* Centra la parte más visible */
-        background-repeat: no-repeat;
-    }
-
-    .panel {
-        min-height: 100vh;
-        /* Ajusta altura para evitar el “salto” */
-    }
-}
-
