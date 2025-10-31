@@ -174,11 +174,11 @@ p {
 
 /* Mové los contenedores */
 .balanceo-parrafos .content:first-child {
-    transform: translateX(35%);
+    transform: translateX(10%);
 }
 
 .balanceo-parrafos .content:last-child {
-    transform: translateX(-35%);
+    transform: translateX(-10%);
 }
 
 @media (max-width: 768px) {
