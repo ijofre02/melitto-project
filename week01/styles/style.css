@@ -20,7 +20,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 8.5rem;
+    font-size: 8.1rem;
     font-weight: 700;
     color: var(--accent2-color);
     text-align: center;
@@ -51,8 +51,8 @@ body {
 .content {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
     padding: 2rem;
-    border-radius: 10px;
-    max-width: 700px;
+    border-radius: 50px;
+    max-width: 500px;
 }
 
 h1 {
@@ -174,11 +174,11 @@ p {
 
 /* Mové los contenedores */
 .balanceo-parrafos .content:first-child {
-    transform: translateX(10%);
+    transform: translateX(-10%);
 }
 
 .balanceo-parrafos .content:last-child {
-    transform: translateX(-10%);
+    transform: translateX(10%);
 }
 
 @media (max-width: 768px) {
@@ -227,13 +227,14 @@ p {
 }
 
 footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     color: #7a5ca4;
-    margin-top: 3rem;
-    padding: 1rem 0;
+    padding: 0.5rem 1rem;
     border-top: 1px solid rgba(122, 92, 164, 0.3);
-    text-decoration: none;
 }
 
 /* --- Ajustes para el celu --- */
