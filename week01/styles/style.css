@@ -39,20 +39,13 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-size: cover;
+    background-size: cover; /* cover funciona */
     background-position: center;
     flex-wrap: nowrap;
 }
 
 .has-parallax {
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #000;
-    /* opcional, por si tarda en cargar */
-
-
 }
 
 .content {
@@ -244,3 +237,11 @@ footer {
 }
 
 /* --- Ajustes para el celu --- */
+@media (max-width: 768px) {
+    .panel {
+        background-size: auto 100%;
+        /* ← evita el zoom excesivo en vertical */
+        background-position: center top;
+        /* ← enfoca mejor la parte superior */
+    }
+}
