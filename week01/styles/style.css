@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #6d4ba3;
+    --primary-color: #987FC4;
     --secondary-color: #ffffff;
     --accent1-color: #f6f2e7;
-    --accent2-color: #9379c3;
+    --accent2-color: #57427C;
     --heading-font: "Playfair Display", serif;
     --body-font: "Lato", sans-serif;
 }
@@ -11,6 +11,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;/* estos dos quiza son innecesarios */
+    overflow-x: hidden; /* Esto oculto el margen blanco derecho en celulares */
 }
 
 body {
@@ -22,9 +28,12 @@ body {
 .hero h1 {
     font-size: 8.1rem;
     font-weight: 700;
-    color: var(--accent2-color);
+    color: var(--primary-color);
     text-align: center;
     line-height: 1.2;
+    text-shadow:0 0 10px rgba(0, 0, 0, 0.8);
+
+       
 }
 
 .hero h2 {
@@ -49,7 +58,7 @@ body {
 }
 
 .content {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+    background: linear-gradient(rgba(0 0 0 / 0.4), rgba(0 0 0 / 0.2));
     padding: 2rem;
     border-radius: 50px;
     max-width: 500px;
@@ -92,7 +101,7 @@ p {
 }
 
 .info-flex img {
-    width: 30%;
+    width: 50%;
     border-radius: 8px;
 }
 
@@ -244,5 +253,41 @@ footer {
         /* ← evita el zoom excesivo en vertical */
         background-position: center top;
         /* ← enfoca mejor la parte superior */
+    }
+
+    .hero h1 {
+        font-size: 5rem;
+    }
+
+    #timer {
+        font-size: 2rem;
+    }
+        .countdown h2 {
+            font-size: 2rem;
+        }
+    .panel {
+        justify-content: flex-end;
+        padding-bottom: 3rem;
+        background-position: 50% 20%;/* el 50 para los ccostados y el 20 enfoca un poco más abajo */
+        /* Como yo condicione el largo de la imagen, no hay nada mas abajo, osea, no se va a mover */
+    }    
+
+    .subtitulo-hero {
+        position: relative;
+        top: -220px;
+        background-color: var(--secondary-color);
+        color: var(--accent2-color);
+    }
+
+    .info-flex .info-card {
+        width: 155px;
+        padding: 0rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 5.5rem;
     }
 }
